@@ -93,14 +93,14 @@ target_link_libraries(mandeye_unicorn ${OPENGL_LIBRARIES} ${PCL_LIBRARIES} ${GLU
  pthread glut  ${catkin_LIBRARIES} ${LIVOX_LIDAR_SDK_LIBRARY} laszip pch ImGui Fusion
 )
 
-add_executable(base_station_unicorn src/base_station_unicorn.cpp ${ImGui_Glut_src} ${FUSION} ${GIZMO})
-ament_target_dependencies(base_station_unicorn rclcpp  nav_msgs std_msgs visualization_msgs tf2_ros pcl_ros)
-target_link_libraries(base_station_unicorn ${OPENGL_LIBRARIES} ${PCL_LIBRARIES} ${GLUT_glut_LIBRARY}
- pthread glut  ${catkin_LIBRARIES} ${LIVOX_LIDAR_SDK_LIBRARY} laszip
-)
+#add_executable(base_station_unicorn src/base_station_unicorn.cpp ${ImGui_Glut_src} ${FUSION} ${GIZMO})
+#ament_target_dependencies(base_station_unicorn rclcpp  nav_msgs std_msgs visualization_msgs tf2_ros pcl_ros)
+#target_link_libraries(base_station_unicorn ${OPENGL_LIBRARIES} ${PCL_LIBRARIES} ${GLUT_glut_LIBRARY}
+# pthread glut  ${catkin_LIBRARIES} ${LIVOX_LIDAR_SDK_LIBRARY} laszip
+#)
 
 install(TARGETS
-		mandeye_unicorn base_station_unicorn
+		mandeye_unicorn #base_station_unicorn
 		DESTINATION lib/${PROJECT_NAME})
 
 
