@@ -933,7 +933,7 @@ int main(int argc, char* argv[])
     {
         printf("Livox Init Failed\n");
         LivoxLidarSdkUninit();
-        //return 1;
+        return EXIT_FAILURE;
     }
 
     SetLivoxLidarImuDataCallback(ImuDataCallback, nullptr);
