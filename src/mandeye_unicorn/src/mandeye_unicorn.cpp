@@ -929,7 +929,7 @@ int main(int argc, char* argv[])
     params.major = 0;
     params.minor = 1;
 
-    if (!LivoxLidarSdkInit(argv[1]))
+    if (!LivoxLidarSdkInit("install/mandeye_unicorn/share/mandeye_unicorn/livox/mid360_config_lio.json"))
     {
         printf("Livox Init Failed\n");
         LivoxLidarSdkUninit();

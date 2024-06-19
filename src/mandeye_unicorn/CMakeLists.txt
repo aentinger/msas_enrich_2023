@@ -103,5 +103,7 @@ install(TARGETS
 		mandeye_unicorn #base_station_unicorn
 		DESTINATION lib/${PROJECT_NAME})
 
+install(DIRECTORY livox DESTINATION share/${PROJECT_NAME})
+
 
 ament_package()
