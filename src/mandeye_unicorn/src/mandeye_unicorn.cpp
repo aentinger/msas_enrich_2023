@@ -119,14 +119,14 @@ struct DemoOdometryParameters
     // double imu_yaw_prev = 0.0;
     int max_current_points = 1000000;
 
-    double rot_speed = 0.5;
-    double rot_speed_slow = 0.2;
+    double rot_speed = 0.2;
+    double rot_speed_slow = 0.1;
     double forward_speed_slow = 0.2;
     double forward_speed = 0.3;
-    double forward_speed_fast = 1.0;
+    double forward_speed_fast = 0.5;
     // double forward_speed_fast = 0.2;
-    double backward_speed_slow = 0.01;
-    double speed_boost = 1.5;
+    double backward_speed_slow = 0.05;
+    double speed_boost = 1.0;
 
     std::string folder1 = "";
     std::string folder2 = "";
