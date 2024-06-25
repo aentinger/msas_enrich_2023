@@ -119,8 +119,8 @@ struct DemoOdometryParameters
     // double imu_yaw_prev = 0.0;
     int max_current_points = 1000000;
 
-    double rot_speed = 0.2;
-    double rot_speed_slow = 0.1;
+    double rot_speed = 10 * M_PI / 180.f;
+    double rot_speed_slow = 5 * M_PI / 180.f;
     double forward_speed_slow = 0.2;
     double forward_speed = 0.3;
     double forward_speed_fast = 0.5;
